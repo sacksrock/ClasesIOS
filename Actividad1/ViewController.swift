@@ -32,7 +32,10 @@ class ViewController: UIViewController {
             self.performSegue(withIdentifier: "tran1", sender: self)
         }
         else{
-            failLogin?.text=String(format:"Intentalo De Nuevo")
+            let myAlert = UIAlertController(title: "Alerta", message: "Intentalo de nuevo", preferredStyle: .alert)
+            let okButton = UIAlertAction(title: "OK", style: .default)
+            myAlert.addAction(okButton)
+            self.present(myAlert, animated: true, completion: nil)
         }
     }
 

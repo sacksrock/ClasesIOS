@@ -18,6 +18,9 @@ class VCRegistro: UIViewController {
     
     
     @IBAction func accionokr(){
+        if (txtfRUser?.text?.isEmpty)! || (txtfRPass?.text?.isEmpty)! || (txtfPasstwo?.text?.isEmpty)! || (txtfEmail?.text?.isEmpty)! {
+            displayAlert(alertTitle: "Alerta",alertMessage: "Completa todos los campos")
+        }
         if txtfRPass?.text==txtfPasstwo?.text {
             DataHolder.sharedInstance.User=txtfRUser?.text
             DataHolder.sharedInstance.Password=txtfRPass?.text
@@ -26,7 +29,7 @@ class VCRegistro: UIViewController {
         }
         
         else{
-            faillogin?.text=String(format:"Las Contraseñas No Coinciden")
+            displayAlert(alertTitle: "Alerta",alertMessage: "Las contraseñas no coinciden")
         }
     }
     
@@ -39,6 +42,13 @@ class VCRegistro: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+  func displayAlert(alertTitle:String, alertMessage:String){
+        let myAlert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .default)
+        myAlert.addAction(okButton)
+        self.present(myAlert, animated: true, completion: nil)
     }
     
    // @IBAction func accionBotonRegistro(){
