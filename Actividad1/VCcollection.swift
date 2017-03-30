@@ -8,8 +8,10 @@
 
 import UIKit
 
-class VCcollection: UIViewController {
-
+class VCcollection: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    @IBOutlet var colPrinc:UICollectionView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,7 +22,16 @@ class VCcollection: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:UICollectionViewCell=collectionView.dequeueReusableCell(withReuseIdentifier: "micelda2", for: indexPath)
+        return cell
+    }
     
+    
+    }
 
     /*
     // MARK: - Navigation
@@ -32,4 +43,4 @@ class VCcollection: UIViewController {
     }
     */
 
-}
+

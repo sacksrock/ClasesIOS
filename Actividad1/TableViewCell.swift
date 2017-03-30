@@ -9,7 +9,9 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    @IBOutlet var LabelCell:UILabel?
+    @IBOutlet var ImgCell:UIImageView?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

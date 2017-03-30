@@ -9,5 +9,17 @@
 import UIKit
 
 class TablaColeccionCell: UICollectionViewCell {
+    @IBOutlet var LabelColl:UILabel?
+    @IBOutlet var ImgColl:UIImageView?
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+
     
 }
+
+
+

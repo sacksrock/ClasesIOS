@@ -9,16 +9,19 @@
 import UIKit
 
 class Cell: UITableViewCell {
-
+    //variables del label y de la imagen
+    @IBOutlet var LabelCell:UILabel?
+    @IBOutlet var ImgCell:UIImageView?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }
