@@ -22,6 +22,7 @@
 		1CC32FD71E82CF65004C48A1 /* Imagemn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CC32FD61E82CF65004C48A1 /* Imagemn.png */; };
 		1CC32FDB1E82D7FE004C48A1 /* VCRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC32FDA1E82D7FE004C48A1 /* VCRegistro.swift */; };
 		1CC32FDD1E82E93A004C48A1 /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC32FDC1E82E93A004C48A1 /* DataHolder.swift */; };
+		1CD738E21EA659FD00C0F78D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CD738E11EA659FD00C0F78D /* GoogleService-Info.plist */; };
 		B135A231516BA112F3829EDE /* Pods_Actividad1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CEFF1C06750C90084871A6 /* Pods_Actividad1UITests.framework */; };
 		C88EFBBBA76FDE01105BD5EF /* Pods_Actividad1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9A0B35817324C4FFE4A1FD /* Pods_Actividad1Tests.framework */; };
 		CD5348D0D7A00D7AF41D25ED /* Pods_Actividad1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC35B907AF61D2F61FE0272 /* Pods_Actividad1.framework */; };
@@ -67,6 +68,7 @@
 		1CC32FD61E82CF65004C48A1 /* Imagemn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Imagemn.png; path = ../imagenes/Imagemn.png; sourceTree = "<group>"; };
 		1CC32FDA1E82D7FE004C48A1 /* VCRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCRegistro.swift; sourceTree = "<group>"; };
 		1CC32FDC1E82E93A004C48A1 /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
+		1CD738E11EA659FD00C0F78D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2D69C26F032FCCDBD8CF2E47 /* Pods-Actividad1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Actividad1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Actividad1/Pods-Actividad1.release.xcconfig"; sourceTree = "<group>"; };
 		36D58D704DD56D3605B2C577 /* Pods-Actividad1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Actividad1UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Actividad1UITests/Pods-Actividad1UITests.release.xcconfig"; sourceTree = "<group>"; };
 		44CEFF1C06750C90084871A6 /* Pods_Actividad1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Actividad1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +157,7 @@
 				1C212C211E84267E00F3BD42 /* TableViewCell.swift */,
 				1C6ADBA01E8928BC0079DC1B /* TablaColeccionCell.swift */,
 				1C6ADBA61E89383E0079DC1B /* VCcollection.swift */,
+				1CD738E11EA659FD00C0F78D /* GoogleService-Info.plist */,
 			);
 			path = Actividad1;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 			files = (
 				1CC32FD71E82CF65004C48A1 /* Imagemn.png in Resources */,
 				1CC32FB31E82C6DB004C48A1 /* LaunchScreen.storyboard in Resources */,
+				1CD738E21EA659FD00C0F78D /* GoogleService-Info.plist in Resources */,
 				1CC32FB01E82C6DB004C48A1 /* Assets.xcassets in Resources */,
 				1CC32FAE1E82C6DB004C48A1 /* Main.storyboard in Resources */,
 			);
