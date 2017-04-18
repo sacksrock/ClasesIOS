@@ -7,32 +7,16 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class VCRegistro: UIViewController {
+    
     @IBOutlet var txtfRUser:UITextField?
     @IBOutlet var txtfRPass:UITextField?
     @IBOutlet var txtfPasstwo:UITextField?
     @IBOutlet var txtfEmail:UITextField?
     @IBOutlet var faillogin:UILabel?
-    
-    
-    
-    @IBAction func accionokr(){
-        if (txtfRUser?.text?.isEmpty)! || (txtfRPass?.text?.isEmpty)! || (txtfPasstwo?.text?.isEmpty)! || (txtfEmail?.text?.isEmpty)! {
-            displayAlert(alertTitle: "Alerta",alertMessage: "Completa todos los campos")
-        }
-        if txtfRPass?.text==txtfPasstwo?.text {
-            DataHolder.sharedInstance.User=txtfRUser?.text
-            DataHolder.sharedInstance.Password=txtfRPass?.text
-            DataHolder.sharedInstance.Email=txtfEmail?.text
-            self.performSegue(withIdentifier: "tran2", sender: self)
-        }
-        
-        else{
-            displayAlert(alertTitle: "Alerta",alertMessage: "Las contraseñas no coinciden")
-        }
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -51,6 +35,19 @@ class VCRegistro: UIViewController {
         self.present(myAlert, animated: true, completion: nil)
     }
     
+    
+    @IBAction func accionokr(){
+        FIRAuth.auth()?.createUser(withEmail: (txtfEmail?.text)!, password: (txtfRPass?.text)!){ (user, error) in
+            
+            if (error==nil){
+                self.performSegue(withIdentifier: "registro", sender: self)
+            }
+            else{
+                print("error parguela",error!)
+            }
+            
+        }
+    
    // @IBAction func accionBotonRegistro(){
        // DataHolder.sharedInstance.User=txtfRUser?.text
     //    DataHolder.sharedInstance.Password=txtfRPass?.text
@@ -68,4 +65,5 @@ class VCRegistro: UIViewController {
     }
     */
 
+}
 }

@@ -15,10 +15,8 @@ class DataHolder: NSObject {
     func initFirebase(){
         FIRApp.configure()
     }
-    
-    
+
     var User:String?
     var Password:String?
     var Email:String?
-    
 }

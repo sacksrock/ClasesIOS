@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class ViewController: UIViewController {
     @IBOutlet var btnLogear:UIButton?
     @IBOutlet var txtfUser:UITextField?
@@ -28,16 +28,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func accionBotonLoguear(){
-        if txtfUser?.text==DataHolder.sharedInstance.User && txtfPass?.text==DataHolder.sharedInstance.Password{
-            self.performSegue(withIdentifier: "tran1", sender: self)
-        }
-        else{
-            let myAlert = UIAlertController(title: "Alerta", message: "Intentalo de nuevo", preferredStyle: .alert)
-            let okButton = UIAlertAction(title: "OK", style: .default)
-            myAlert.addAction(okButton)
-            self.present(myAlert, animated: true, completion: nil)
-        }
+        
+        FIRAuth.auth()?.createUser(withEmail: (txtfUser?.text)!, password: (txtfPass?.text)!){ (user, error) in
+            if (error==nil){
+                self.performSegue(withIdentifier: "tran1", sender: self)
+            }
+            else{
+                print("error parguela",error!)
+            }
+                
     }
-
+    
 }
 
+}
