@@ -8,15 +8,18 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
 
 class DataHolder: NSObject {
     static let sharedInstance:DataHolder=DataHolder()
     
+    var numeroCeldasColeccion:UInt=20;
+    var locationAdmin:LocationAdmin?
+    var firDataBaseRef = FIRDatabaseReference!
+    
     func initFirebase(){
         FIRApp.configure()
+        firDataBaseRef = FIRDatabase.database().reference()
     }
 
-    var User:String?
-    var Password:String?
-    var Email:String?
 }
