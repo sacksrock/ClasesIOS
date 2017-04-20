@@ -9,61 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Actividad1/VCRegistro.swift"
-            timestampString = "514220263.875486"
+            filePath = "Actividad1/CollectionViewCell.swift"
+            timestampString = "514375631.885957"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "accionokr()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Actividad1.VCRegistro.accionokr () -&gt; ()"
-                  moduleName = "Actividad1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/daniel.iglesia/Desktop/IOS-master/Actividad1/VCRegistro.swift"
-                  timestampString = "514220695.203357"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "1159">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Actividad1.VCRegistro.(accionokr () -&gt; ()).(closure #1)"
-                  moduleName = "Actividad1"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/daniel.iglesia/Desktop/IOS-master/Actividad1/VCRegistro.swift"
-                  timestampString = "514220695.206168"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "49"
-                  endingLineNumber = "49"
-                  offsetFromSymbolStart = "493">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Actividad1/VCRegistro.swift"
-            timestampString = "514220277.291045"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "accionokr()"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

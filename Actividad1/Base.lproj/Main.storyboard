@@ -47,7 +47,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Imagemn.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cod-Ss-pTO">
                                 <rect key="frame" x="81" y="0.0" width="216" height="211"/>
@@ -63,7 +63,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="LOGIN"/>
                                 <connections>
-                                    <action selector="accionBotonLoguear" destination="BYZ-38-t0r" eventType="touchUpInside" id="Okl-eF-dPp"/>
+                                    <action selector="accionBotonLoguear" destination="BYZ-38-t0r" eventType="touchUpInside" id="xoD-4l-8rQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEf-ht-h4d" colorLabel="IBBuiltInLabel-Red">
@@ -99,7 +99,7 @@
         <!--Mapa-->
         <scene sceneID="7HK-81-jui">
             <objects>
-                <viewController id="cut-NI-5nv" sceneMemberID="viewController">
+                <viewController id="cut-NI-5nv" customClass="Mapa" customModule="Actividad1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="J2p-XN-Ax9"/>
                         <viewControllerLayoutGuide type="bottom" id="CkF-iI-Icp"/>
@@ -116,6 +116,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" id="YB7-ny-Tty" colorLabel="IBBuiltInLabel-Yellow"/>
+                    <connections>
+                        <outlet property="map" destination="kHB-5H-EAY" id="ezB-Zf-XEp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W89-Fs-SNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,7 +127,7 @@
         <!--Coleccion-->
         <scene sceneID="ePz-xt-6Mx">
             <objects>
-                <viewController id="hSY-32-Zja" customClass="VCcollection" customModule="Actividad1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hSY-32-Zja" customClass="VCCollection" customModule="Actividad1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DDI-Cn-ebg"/>
                         <viewControllerLayoutGuide type="bottom" id="0nB-Nr-Akz"/>
@@ -144,26 +147,30 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="micelda2" id="7bV-4e-cHv">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="micelda2" id="7bV-4e-cHv" customClass="CollectionViewCell" customModule="Actividad1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Daniel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XN-0j-vil">
-                                                    <rect key="frame" x="29" y="71" width="48" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XN-0j-vil">
+                                                    <rect key="frame" x="14" y="71" width="70" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Imagemn.png" translatesAutoresizingMaskIntoConstraints="NO" id="tJV-zB-vlD">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJV-zB-vlD">
                                                     <rect key="frame" x="14" y="8" width="70" height="62"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
+                                        <connections>
+                                            <outlet property="imgvMain" destination="tJV-zB-vlD" id="3ck-kx-fUh"/>
+                                            <outlet property="lblNombre" destination="5XN-0j-vil" id="vOB-ii-WMC"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -176,7 +183,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Coleccion" id="9Y3-PW-wyi"/>
                     <connections>
-                        <outlet property="colPrinc" destination="O7H-EC-IwW" id="zRq-Wd-WAA"/>
+                        <outlet property="colPrincipal" destination="O7H-EC-IwW" id="eiI-gx-Mk0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYq-EF-al7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -186,7 +193,7 @@
         <!--Tabla-->
         <scene sceneID="Vbk-6X-3ZK">
             <objects>
-                <viewController id="bPd-Eg-vIa" customClass="VCTable" customModule="Actividad1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="bPd-Eg-vIa" customClass="tableview" customModule="Actividad1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PLW-0A-nVX"/>
                         <viewControllerLayoutGuide type="bottom" id="mfF-jJ-DeL"/>
@@ -200,11 +207,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda1" rowHeight="90" id="WPP-Zu-ptg" customClass="TableViewCell" customModule="Actividad1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda1" rowHeight="90" id="WPP-Zu-ptg" customClass="CeldaTableViewCell" customModule="Actividad1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WPP-Zu-ptg" id="XgL-El-EoN">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="89"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Imagemn.png" translatesAutoresizingMaskIntoConstraints="NO" id="CAv-HA-cKm">
@@ -224,8 +231,8 @@
                                         </tableViewCellContentView>
                                         <color key="tintColor" red="0.44100672918260908" green="0.72695457667382246" blue="0.95373218911917101" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <outlet property="ImgCell" destination="CAv-HA-cKm" id="RWA-vQ-snQ"/>
-                                            <outlet property="LabelCell" destination="L1R-sX-lNh" id="xBX-hc-9Ye"/>
+                                            <outlet property="lblImagen" destination="CAv-HA-cKm" id="gzl-Cw-pLc"/>
+                                            <outlet property="lblNombre" destination="L1R-sX-lNh" id="YjO-gE-oXb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -239,7 +246,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Tabla" id="BJL-e8-7Ec"/>
                     <connections>
-                        <outlet property="miTabla" destination="zEx-7Z-soZ" id="3QU-Nv-jfc"/>
+                        <outlet property="miTabla" destination="zEx-7Z-soZ" id="Qo9-js-scg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cTM-T5-qBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -302,13 +309,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7hc-kg-zvd">
-                                <rect key="frame" x="50" y="456" width="273" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHZ-95-bQK">
                                 <rect key="frame" x="50" y="494" width="81" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -344,10 +344,9 @@
                     </view>
                     <connections>
                         <outlet property="faillogin" destination="lqX-Xv-bCr" id="RFI-7u-qEn"/>
-                        <outlet property="txtfEmail" destination="7hc-kg-zvd" id="BWD-DN-Xzb"/>
+                        <outlet property="txtfEmail" destination="Khn-gz-gO9" id="3q0-ts-dGP"/>
                         <outlet property="txtfPasstwo" destination="dVX-sf-abz" id="gG8-aD-paP"/>
                         <outlet property="txtfRPass" destination="Odc-Hu-JpM" id="8dM-Xe-Pqc"/>
-                        <outlet property="txtfRUser" destination="Khn-gz-gO9" id="3lu-wY-cMD"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="tran2" id="O1J-VL-yei"/>
                     </connections>
                 </viewController>
@@ -360,7 +359,7 @@
         <image name="Imagemn.png" width="300" height="300"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O1J-VL-yei"/>
+        <segue reference="SbE-yw-ZZX"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.42443782091140747" green="0.28028184175491333" blue="0.75210309028625488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

@@ -10,6 +10,7 @@ pod 'Firebase/Core'
 pod 'Firebase/Messaging'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
+pod 'Firebase/Storage'
 
   target 'Actividad1Tests' do
     inherit! :search_paths

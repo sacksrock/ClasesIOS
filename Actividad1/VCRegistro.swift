@@ -27,34 +27,17 @@ class VCRegistro: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-  func displayAlert(alertTitle:String, alertMessage:String){
-        let myAlert = UIAlertController(title: alertTitle, message: alertMessage, preferredStyle: .alert)
-        let okButton = UIAlertAction(title: "OK", style: .default)
-        myAlert.addAction(okButton)
-        self.present(myAlert, animated: true, completion: nil)
-    }
-    
-    
-    @IBAction func accionokr(){
-        FIRAuth.auth()?.createUser(withEmail: (txtfEmail?.text)!, password: (txtfRPass?.text)!){ (user, error) in
-            
-            if (error==nil){
-                self.performSegue(withIdentifier: "registro", sender: self)
+    @IBAction func accionokr() {
+        FIRAuth.auth()?.createUser(withEmail:(txtfEmail?.text)!, password:(txtfRPass?.text)! ) { (user, error) in
+        if(error == nil){
+            self.performSegue(withIdentifier: "tran2", sender: self)
             }
             else{
-                print("error parguela",error!)
+                print("Error",error!)
             }
-            
         }
-    
-   // @IBAction func accionBotonRegistro(){
-       // DataHolder.sharedInstance.User=txtfRUser?.text
-    //    DataHolder.sharedInstance.Password=txtfRPass?.text
-        
-     //   self.performSegue(withIdentifier: "tran2", sender: self)
-    //}
-    
+    }
+  
     /*
     // MARK: - Navigation
 
@@ -66,4 +49,4 @@ class VCRegistro: UIViewController {
     */
 
 }
-}
+

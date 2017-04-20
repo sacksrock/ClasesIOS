@@ -9,17 +9,23 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseStorage
+
 
 class DataHolder: NSObject {
     static let sharedInstance:DataHolder=DataHolder()
     
-    var numeroCeldasColeccion:UInt=20;
-    var locationAdmin:LocationAdmin?
-    var firDataBaseRef = FIRDatabaseReference!
+    var firDatabaseRef: FIRDatabaseReference!
+    var firStorage:FIRStorage?
+    var arCoche: Array<Coche>?
+    var firStorageRef:FIRStorageReference?
     
-    func initFirebase(){
+    
+    func initFirebase() {
         FIRApp.configure()
-        firDataBaseRef = FIRDatabase.database().reference()
+        firDatabaseRef = FIRDatabase.database().reference()
+        firStorage = FIRStorage.storage()
+        firStorageRef = firStorage?.reference()
     }
-
+    
 }

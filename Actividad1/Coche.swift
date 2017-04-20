@@ -8,28 +8,22 @@
 
 import UIKit
 
-class Coche: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+class Coche: NSObject {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    var sNombre:String?
+    var sMarca:String?
+    var iFabricado:Int?
+    var sRutaImagen:String?
+    var dbLon:Double?
+    var dbLat:Double?
+    
+    init(valores:[String:AnyObject]){
+        sNombre=valores["Modelo"] as? String
+        sMarca=valores["Marca"] as? String
+        iFabricado=valores["Fabricado"] as? Int
+        sRutaImagen=valores["RutaImagen"] as? String
+        dbLat=valores["lat"] as? Double
+        dbLon=valores["lon"] as? Double
+        
     }
-    */
-
 }

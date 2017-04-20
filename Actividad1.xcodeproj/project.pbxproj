@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C212C221E84267E00F3BD42 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C212C211E84267E00F3BD42 /* TableViewCell.swift */; };
+		1C48162A1EA8BB230050C0E6 /* Coche.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816291EA8BB230050C0E6 /* Coche.swift */; };
+		1C4816301EA8BF2B0050C0E6 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C48162F1EA8BF2B0050C0E6 /* CollectionViewCell.swift */; };
+		1C4816321EA8C00A0050C0E6 /* CeldaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816311EA8C00A0050C0E6 /* CeldaTableViewCell.swift */; };
+		1C4816341EA8C0B20050C0E6 /* tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816331EA8C0B20050C0E6 /* tableview.swift */; };
+		1C4816361EA8C12D0050C0E6 /* Mapa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816351EA8C12D0050C0E6 /* Mapa.swift */; };
+		1C4816381EA8C2110050C0E6 /* VCCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4816371EA8C2110050C0E6 /* VCCollection.swift */; };
 		1C50565E1E841B7B008C5109 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C50565D1E841B7B008C5109 /* MapKit.framework */; };
-		1C5056601E841CF8008C5109 /* VCTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C50565F1E841CF8008C5109 /* VCTable.swift */; };
-		1C6ADBA11E8928BC0079DC1B /* TablaColeccionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ADBA01E8928BC0079DC1B /* TablaColeccionCell.swift */; };
-		1C6ADBA71E89383E0079DC1B /* VCcollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6ADBA61E89383E0079DC1B /* VCcollection.swift */; };
 		1CC32FA91E82C6DA004C48A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC32FA81E82C6DA004C48A1 /* AppDelegate.swift */; };
 		1CC32FAB1E82C6DB004C48A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC32FAA1E82C6DB004C48A1 /* ViewController.swift */; };
 		1CC32FAE1E82C6DB004C48A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC32FAC1E82C6DB004C48A1 /* Main.storyboard */; };
@@ -19,7 +21,6 @@
 		1CC32FB31E82C6DB004C48A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CC32FB11E82C6DB004C48A1 /* LaunchScreen.storyboard */; };
 		1CC32FBE1E82C6DB004C48A1 /* Actividad1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC32FBD1E82C6DB004C48A1 /* Actividad1Tests.swift */; };
 		1CC32FC91E82C6DB004C48A1 /* Actividad1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC32FC81E82C6DB004C48A1 /* Actividad1UITests.swift */; };
-		1CC32FD71E82CF65004C48A1 /* Imagemn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CC32FD61E82CF65004C48A1 /* Imagemn.png */; };
 		1CC32FDB1E82D7FE004C48A1 /* VCRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC32FDA1E82D7FE004C48A1 /* VCRegistro.swift */; };
 		1CC32FDD1E82E93A004C48A1 /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC32FDC1E82E93A004C48A1 /* DataHolder.swift */; };
 		1CD738E21EA659FD00C0F78D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CD738E11EA659FD00C0F78D /* GoogleService-Info.plist */; };
@@ -47,11 +48,13 @@
 
 /* Begin PBXFileReference section */
 		0B26381B3069D1CBD9492C5B /* Pods-Actividad1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Actividad1Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Actividad1Tests/Pods-Actividad1Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		1C212C211E84267E00F3BD42 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		1C4816291EA8BB230050C0E6 /* Coche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coche.swift; sourceTree = "<group>"; };
+		1C48162F1EA8BF2B0050C0E6 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		1C4816311EA8C00A0050C0E6 /* CeldaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeldaTableViewCell.swift; sourceTree = "<group>"; };
+		1C4816331EA8C0B20050C0E6 /* tableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tableview.swift; sourceTree = "<group>"; };
+		1C4816351EA8C12D0050C0E6 /* Mapa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapa.swift; sourceTree = "<group>"; };
+		1C4816371EA8C2110050C0E6 /* VCCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCCollection.swift; sourceTree = "<group>"; };
 		1C50565D1E841B7B008C5109 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		1C50565F1E841CF8008C5109 /* VCTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCTable.swift; sourceTree = "<group>"; };
-		1C6ADBA01E8928BC0079DC1B /* TablaColeccionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablaColeccionCell.swift; sourceTree = "<group>"; };
-		1C6ADBA61E89383E0079DC1B /* VCcollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCcollection.swift; sourceTree = "<group>"; };
 		1CC32FA51E82C6DA004C48A1 /* Actividad1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Actividad1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC32FA81E82C6DA004C48A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1CC32FAA1E82C6DB004C48A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +68,6 @@
 		1CC32FC41E82C6DB004C48A1 /* Actividad1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Actividad1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CC32FC81E82C6DB004C48A1 /* Actividad1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actividad1UITests.swift; sourceTree = "<group>"; };
 		1CC32FCA1E82C6DB004C48A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1CC32FD61E82CF65004C48A1 /* Imagemn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Imagemn.png; path = ../imagenes/Imagemn.png; sourceTree = "<group>"; };
 		1CC32FDA1E82D7FE004C48A1 /* VCRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCRegistro.swift; sourceTree = "<group>"; };
 		1CC32FDC1E82E93A004C48A1 /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		1CD738E11EA659FD00C0F78D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -144,7 +146,6 @@
 		1CC32FA71E82C6DA004C48A1 /* Actividad1 */ = {
 			isa = PBXGroup;
 			children = (
-				1CC32FD61E82CF65004C48A1 /* Imagemn.png */,
 				1CC32FA81E82C6DA004C48A1 /* AppDelegate.swift */,
 				1CC32FAA1E82C6DB004C48A1 /* ViewController.swift */,
 				1CC32FAC1E82C6DB004C48A1 /* Main.storyboard */,
@@ -153,11 +154,13 @@
 				1CC32FB41E82C6DB004C48A1 /* Info.plist */,
 				1CC32FDA1E82D7FE004C48A1 /* VCRegistro.swift */,
 				1CC32FDC1E82E93A004C48A1 /* DataHolder.swift */,
-				1C50565F1E841CF8008C5109 /* VCTable.swift */,
-				1C212C211E84267E00F3BD42 /* TableViewCell.swift */,
-				1C6ADBA01E8928BC0079DC1B /* TablaColeccionCell.swift */,
-				1C6ADBA61E89383E0079DC1B /* VCcollection.swift */,
 				1CD738E11EA659FD00C0F78D /* GoogleService-Info.plist */,
+				1C4816291EA8BB230050C0E6 /* Coche.swift */,
+				1C48162F1EA8BF2B0050C0E6 /* CollectionViewCell.swift */,
+				1C4816311EA8C00A0050C0E6 /* CeldaTableViewCell.swift */,
+				1C4816331EA8C0B20050C0E6 /* tableview.swift */,
+				1C4816351EA8C12D0050C0E6 /* Mapa.swift */,
+				1C4816371EA8C2110050C0E6 /* VCCollection.swift */,
 			);
 			path = Actividad1;
 			sourceTree = "<group>";
@@ -317,7 +320,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1CC32FD71E82CF65004C48A1 /* Imagemn.png in Resources */,
 				1CC32FB31E82C6DB004C48A1 /* LaunchScreen.storyboard in Resources */,
 				1CD738E21EA659FD00C0F78D /* GoogleService-Info.plist in Resources */,
 				1CC32FB01E82C6DB004C48A1 /* Assets.xcassets in Resources */,
@@ -486,12 +488,14 @@
 			files = (
 				1CC32FAB1E82C6DB004C48A1 /* ViewController.swift in Sources */,
 				1CC32FA91E82C6DA004C48A1 /* AppDelegate.swift in Sources */,
-				1C6ADBA71E89383E0079DC1B /* VCcollection.swift in Sources */,
+				1C4816301EA8BF2B0050C0E6 /* CollectionViewCell.swift in Sources */,
+				1C4816361EA8C12D0050C0E6 /* Mapa.swift in Sources */,
 				1CC32FDB1E82D7FE004C48A1 /* VCRegistro.swift in Sources */,
-				1C212C221E84267E00F3BD42 /* TableViewCell.swift in Sources */,
+				1C4816381EA8C2110050C0E6 /* VCCollection.swift in Sources */,
+				1C48162A1EA8BB230050C0E6 /* Coche.swift in Sources */,
 				1CC32FDD1E82E93A004C48A1 /* DataHolder.swift in Sources */,
-				1C6ADBA11E8928BC0079DC1B /* TablaColeccionCell.swift in Sources */,
-				1C5056601E841CF8008C5109 /* VCTable.swift in Sources */,
+				1C4816321EA8C00A0050C0E6 /* CeldaTableViewCell.swift in Sources */,
+				1C4816341EA8C0B20050C0E6 /* tableview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
